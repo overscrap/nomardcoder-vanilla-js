@@ -1,0 +1,25 @@
+.param{
+    width: 100px;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.question{
+    font-size: 30px;
+    font-style: italic;
+}
+.bold{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
