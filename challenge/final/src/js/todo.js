@@ -22,11 +22,13 @@ function paintToDo(newTodo) {
     li.id = newTodo.id;
     const span = document.createElement("span");
     span.innerText = newTodo.text;
-    const button = document.createElement("button");
-    button.innerText = "❌";
-    button.addEventListener("click", deleteToDo);
+    const icon = document.createElement("i");
+    icon.classList.add("fa-solid");
+    icon.classList.add("fa-xmark");
+    icon.style.fontSize = "30px";
+    icon.addEventListener("click", deleteToDo);
     li.appendChild(span);
-    li.appendChild(button);
+    li.appendChild(icon);
     toDoList.appendChild(li);
 }
 

@@ -1,3 +1,135 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
 .hidden {
     display: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+}
+
+.header-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-column {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.content-column:first-child {
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.content-column:nth-child(2) {
+    font-size: 100px;
+    font-weight: 600;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-column:nth-child(2) input:first-child {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 500;
+    outline: none;
+    text-align: center;
+    transition: border-color .2s ease;
+    margin-bottom: 25px;
+}
+
+.content-column:nth-child(2) input:last-child {
+    width: 50%;
+    border: none;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 500;
+    outline: none;
+    text-align: center;
+    transition: border-color .2s ease;
+}
+
+.content-column:last-child {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.content-column:last-child input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.2;
+    font-weight: 500;
+    outline: none;
+    text-align: center;
+    transition: border-color .2s ease;
+}
+
+.content-column:last-child input::placeholder {
+    font-size: 0.6em;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.content-column:last-child ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    margin: 15px;
+}
+
+.content-column:last-child ul li i {
+    margin-left: 10px;
+}
+
+.fotter {
+    /* width: 100%;
+    height: 100%; */
+}
+
+.fotter-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
